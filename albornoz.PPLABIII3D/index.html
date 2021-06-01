@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta Animal</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/cc90f0dff8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img class="logo" src="./asset/logo-principal.png" alt="logo principal">
+            <nav>
+                <ul>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./anuncios.html">Anuncios</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Administracion</h1>
+    <div class="banner">
+    </div>
+    <section class="container" id="dataIn">
+        <form>                
+            <input type="hidden" id="txtId" name="id">
+            <label>
+                Titulo: <input type="text" id="txtTitulo" name="titulo" placeholder="Titulo" required>
+            </label>
+
+            <fieldset>
+                <legend>Transaccion</legend>
+                <label for="rdoVenta"><input type="radio" name="transaccion" id="rdoVenta" value="venta" checked>Venta</label>
+                <label for="rdoAlquiler"><input type="radio" name="transaccion" id="rdoAlquiler" value="alquiler">alquiler</label>
+            </fieldset>
+
+            <label>
+                 Descripcion: <input type="text" id="txtDescripcion" name="descripcion" placeholder="Descripcion" required>
+             </label>
+
+            <label>
+                Precio: <input type="number" id="txtPrecio" name="precio" placeholder="Precio" required>
+            </label>
+
+            <fieldset>
+                <img class="icon" src="./asset/puertas.svg" alt="icono puertas">
+                <input type="text" id="txtCantidadPuertas" name="cantidadPuertas" placeholder="Numero de puertas" required>
+
+                <img class="icon" src="./asset/kmh.svg" alt="icono km">
+                <input type="text" id="txtCantidadKms" name="cantidadKms" placeholder="cantidadKms" required>
+
+                <img class="icon" src="./asset/potencia.svg" alt="icono potencia">
+                <input type="text" id="txtPotencia" name="potencia" placeholder="Potencia" required>
+                
+  
+            </fieldset>
+            <div class="botones">
+                <button id="alta" name='alta' class="fas fa-save"> Alta Anuncio</button>
+                <button id="modificar" name='modificar'> Modificar Anuncio</button>
+                <button id="baja" name='baja'> Baja Anuncio</button>
+                <input type="reset" id="cancelar" name='cancelar' value='Cancelar'>
+            </div>
+        </form>
+    </section>
+    <section class="container">
+        <div id="divTabla">
+            
+        </div>
+    </section>
+    <footer>
+        <div class="nav">
+            <nav class= "nav-container">
+                <ul>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./anuncios.html">Anuncios</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    <span>Todos los derechos reservados &copy;</span>
+    </footer>
+</body>
+</html>
